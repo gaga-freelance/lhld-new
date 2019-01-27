@@ -5,15 +5,19 @@
 }
 html {
   font-size: 62.5%;
-  background: #fafafa;
+  background: #f4f4f4;
 }
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial;
   line-height: 1.6;
   font-size: 16px;
-  color: #444;
+  color: #3c3c3c;
   transition: all .4s .3s ease-in;
+  margin: 20px;
 }
 body,html{
 	min-height: 100vh;
+}
+a {
+  transition: all .15s ease-in;
 }

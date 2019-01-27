@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
 
 // Fonts
 
-$font-sans     :    'Montserrat', sans-serif;
+$font-sans     :    'Roboto', sans-serif;
 
 // Colours
 
-$base : #F7F6F0;
-$darken : darken(#F7F6F0 , 30%);
-$back: darken(#F7F6F0, 40%);
+$base : #DB2B39;
+$darken : darken(#DB2B39 , 30%);
+$back: darken(#DB2B39, 40%);
+$shadow: rgba(219,43,57,.1);
 
-$text-default  :  #444;
+$white: #f4f4f4;
+
+$text-default  :  #3c3c3c;

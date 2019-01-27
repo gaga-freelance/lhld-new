@@ -1,9 +1,57 @@
 .header {
-
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  z-index: 9999;
 }
-.logo {
-  
-  img {
 
+.logo {
+  display: inline-block;
+  background: $white;
+  padding: 15px 10px 10px 10px;
+
+  img {
+    width: 279px;
+    height: 80px;
+  }
+}
+
+.quick-contact {
+  display: inline-block;
+  right: 20px;
+  background: $base;
+  color: $white;
+  padding: 10px;
+  font-size: 1.5em;
+  text-align: right;
+  position: absolute;
+
+  span {
+    display: block;
+  }
+
+  .fas {
+    font-size: .7em;
+    vertical-align: 1px;
+  }
+
+  .tel {
+    font-weight: 700;
+  }
+
+  .email {
+    font-size: .8em;
+
+
+    a {
+      color: $white;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
