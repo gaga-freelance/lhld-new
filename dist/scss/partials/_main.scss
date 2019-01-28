@@ -18,20 +18,60 @@
        display: inline-block;
      }
 
+     .years {
+       color: $base;
+     }
+
      .cta-inner {
        background: $white;
        padding: 10px 15px;
        display: inline-block;
-       max-width: 70%;
+       max-width: 73%;
+       position: relative;
 
        span {
          font-size: 1.8em;
          line-height: 1.2em;
          font-weight: 700;
          display: inline-block;
-         width: 50%;
+         padding-right: 230px;
+         color: $base;
+       }
+
+       .button {
+         position: absolute;
+         right: 15px;
+         top: 20px;
        }
      }
+   }
+ }
+
+ .services {
+   background: $base;
+   margin-top: 20px;
+   padding: 40px 0;
+
+   .block {
+     background: $white;
+   }
+
+   .check {
+     text-transform: uppercase;
+
+     .fas {
+       color: $base;
+       padding-right: 5px;
+     }
+   }
+
+   .button {
+     display: block;
+     margin: 20px;
+   }
+
+   .logos {
+     text-align: center;
    }
  }
 }
