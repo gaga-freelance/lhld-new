@@ -7,11 +7,31 @@
    position: relative;
 
    .cta {
-     background: $white;
      position: absolute;
      bottom: 0;
      left: 0;
+
+     p {
+       background: $white;
+       padding: 10px 15px 0;
+       margin: 0;
+       display: inline-block;
+     }
+
+     .cta-inner {
+       background: $white;
+       padding: 10px 15px;
+       display: inline-block;
+       max-width: 70%;
+
+       span {
+         font-size: 1.8em;
+         line-height: 1.2em;
+         font-weight: 700;
+         display: inline-block;
+         width: 50%;
+       }
+     }
    }
  }
-
 }
