@@ -812,3 +812,10 @@ h6 {
     margin: 20px; }
   .main .services .logos {
     text-align: center; }
+
+.main .reviews {
+  background: url("../images/grass.jpg");
+  margin-top: 20px;
+  padding: 40px 0; }
+  .main .reviews .block {
+    background: #f4f4f4; }

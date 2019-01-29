@@ -74,4 +74,15 @@
      text-align: center;
    }
  }
+
+ .reviews {
+   background: url('../images/grass.jpg');
+   margin-top: 20px;
+   padding: 40px 0;
+
+   .block {
+     background: $white;
+   }
+   
+ }
 }
