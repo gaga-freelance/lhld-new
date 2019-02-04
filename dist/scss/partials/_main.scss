@@ -75,14 +75,137 @@
    }
  }
 
- .reviews {
-   background: url('../images/grass.jpg');
-   margin-top: 20px;
-   padding: 40px 0;
+  .reviews {
+    background: url('../images/grass.jpg');
+    margin-top: 20px;
+    padding: 40px 0;
 
-   .block {
-     background: $white;
-   }
-   
- }
+    .block {
+      background: $white;
+      max-height: 500px;
+      overflow-y: scroll;
+
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      .review-overview {
+        margin-bottom: 10px;
+        display: block;
+
+        a {
+          text-decoration: none;
+          color: $base;
+
+          &:hover {
+            color: $darken;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .rating {
+        padding-top: 25px;
+        line-height: 1em;
+        display: block;
+        text-align: right;
+        font-size: 3em;
+        font-weight: 700;
+      }
+
+      .overall-rating {
+        color: $base;
+      }
+
+      .review-number {
+        display: block;
+        text-align: right;
+      }
+
+      .review {
+        padding-top: 10px;
+        padding-bottom: 20px;
+
+        .col-9 {
+          border-bottom: 1px solid $text-grey;
+        }
+
+        .title {
+          font-size: 1.2em;
+          line-height: 1.2em;
+          margin-top: 0;
+        }
+
+        .content {
+          margin-top: 0;
+          padding: 0;
+        }
+
+        .customer {
+          padding: 0;
+          margin: 0;
+          color: $text-grey;
+          font-weight: 300;
+          font-size: .9em;
+        }
+
+        .date {
+          padding: 0;
+          margin: 0;
+          font-size: .8em;
+          font-style: italic;
+          padding-bottom: 20px;
+          color: $text-grey;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
+  .getintouch-cta {
+    background: $white;
+
+    p {
+      font-size: 2em;
+      color: $base;
+      font-weight: 700;
+      margin: 20px 0;
+    }
+
+    .button {
+      margin-top: 20px;
+      display: block;
+    }
+  }
+
+  .examples {
+    background: $base;
+
+    h2 {
+      color: $white;
+      font-size: 2.5em;
+    }
+
+    a {
+      background: $white;
+      display: block;
+      text-decoration: none;
+      margin-bottom: 30px;
+
+      &:hover span {
+        color: $base;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    span {
+      color: $text-default;
+      font-size: 1.1em;
+      padding: 5px 10px 10px;
+      display: block;
+    }
+  }
 }
