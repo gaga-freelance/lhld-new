@@ -226,4 +226,17 @@
   .lead-blockpaving {
     background: url('../images/lead.jpg');
   }
+
+  .gallery {
+    background: $base;
+    padding: 20px 0 40px;
+
+    h2 {
+      color: $white;
+    }
+
+    .example-image-link {
+      width: 300px;
+    }
+  }
 }
