@@ -111,6 +111,10 @@
 .submenu-item {
     display: block;
     text-align: left;
+
+    .active {
+      text-decoration: underline;
+    }
 }
 
 .submenu-link,

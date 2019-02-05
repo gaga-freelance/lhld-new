@@ -2,7 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>Sheepshell - Bleat bleat!</title>
+    <title>LH Landscaping</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
@@ -472,6 +472,21 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/js/scripts.js"></script>
+
+    <script>
+      $(function() {
+        var header = $(".header");
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 20) {
+                header.removeClass('header').addClass("header-alt");
+            } else {
+                header.removeClass("header-alt").addClass('header');
+            }
+        });
+      });
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

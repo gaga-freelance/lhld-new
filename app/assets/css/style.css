@@ -604,11 +604,20 @@ h6 {
     page-break-after: avoid; } }
 
 .header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  z-index: 9999; }
+
+.header-alt {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   padding: 20px;
+  padding-top: 0;
   z-index: 9999; }
 
 .logo {
@@ -739,6 +748,8 @@ h6 {
 .submenu-item {
   display: block;
   text-align: left; }
+  .submenu-item .active {
+    text-decoration: underline; }
 
 .submenu-link,
 .submenu-link:link,
@@ -901,6 +912,17 @@ h6 {
     font-size: 1.1em;
     padding: 5px 10px 10px;
     display: block; }
+
+.main .lead-sub {
+  height: 70vh; }
+  .main .lead-sub .cta-inner {
+    max-width: 100% !important; }
+
+.main .sidebar {
+  padding-top: 20px; }
+
+.main .lead-blockpaving {
+  background: url("../images/lead.jpg"); }
 
 .footer {
   background: #3c3c3c;

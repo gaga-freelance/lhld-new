@@ -208,4 +208,22 @@
       display: block;
     }
   }
+
+  // Sub pages
+
+  .lead-sub {
+    height: 70vh;
+
+    .cta-inner {
+      max-width: 100% !important;
+    }
+  }
+
+  .sidebar {
+    padding-top: 20px;
+  }
+
+  .lead-blockpaving {
+    background: url('../images/lead.jpg');
+  }
 }
