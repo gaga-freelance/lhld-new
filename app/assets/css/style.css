@@ -914,15 +914,58 @@ h6 {
     display: block; }
 
 .main .lead-sub {
-  height: 70vh; }
+  height: 70vh;
+  background-size: cover !important; }
   .main .lead-sub .cta-inner {
     max-width: 100% !important; }
 
 .main .sidebar {
-  padding-top: 20px; }
+  padding-top: 97px; }
 
 .main .lead-blockpaving {
-  background: url("../images/lead.jpg"); }
+  background: url("../subpage-images/1.jpg"); }
+
+.main .lead-cobbledriveways {
+  background: url("../subpage-images/2.jpg"); }
+
+.main .lead-resinbounddriveways {
+  background: url("../subpage-images/3.jpg"); }
+
+.main .lead-graveldriveways {
+  background: url("../subpage-images/4.jpg"); }
+
+.main .lead-tarmacdriveways {
+  background: url("../subpage-images/5.jpg"); }
+
+.main .lead-permeablepaving {
+  background: url("../subpage-images/6.jpg"); }
+
+.main .lead-drivewaycleaningandsealing {
+  background: url("../subpage-images/7.jpg"); }
+
+.main .lead-patios {
+  background: url("../subpage-images/8.jpg"); }
+
+.main .lead-artificialgrass {
+  background: url("../subpage-images/9.jpg"); }
+
+.main .lead-turfing {
+  background: url("../subpage-images/10.jpg"); }
+
+.main .lead-drainage {
+  background: url("../subpage-images/11.jpg"); }
+
+.main .lead-deckingandcompositedecking {
+  background: url("../subpage-images/12.jpg"); }
+
+.main .lead-outbuildings {
+  background: url("../subpage-images/13.jpg"); }
+
+.main .lead-shedbases {
+  background: url("../subpage-images/14.jpg"); }
+
+.main .lead-fencing {
+  background: url("../subpage-images/15.jpg"); }
 
 .main .gallery {
   background: #DB2B39;
