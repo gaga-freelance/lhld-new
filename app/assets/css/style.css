@@ -967,6 +967,9 @@ h6 {
 .main .lead-fencing {
   background: url("../subpage-images/fencing/lead.jpg"); }
 
+.main .lead-brickwork {
+  background: url("../subpage-images/brickwork/lead.jpg"); }
+
 .main .gallery {
   background: #DB2B39;
   padding: 20px 0 40px; }
