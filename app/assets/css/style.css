@@ -958,9 +958,6 @@ h6 {
 .main .lead-deckingandcompositedecking {
   background: url("../subpage-images/decking/lead.jpg"); }
 
-.main .lead-outbuildings {
-  background: url("../subpage-images/outbuildings/lead.jpg"); }
-
 .main .lead-shedbases {
   background: url("../subpage-images/shed-bases/lead.jpg"); }
 
@@ -972,6 +969,12 @@ h6 {
 
 .main .lead-landscaping {
   background: url("../subpage-images/landscaping/lead.jpg"); }
+
+.main .lead-gallery {
+  background: url("../subpage-images/gallery/lead.jpg"); }
+
+.main .lead-contact {
+  background: url("../subpage-images/contact/lead.jpg"); }
 
 .main .gallery {
   background: #DB2B39;
