@@ -293,7 +293,7 @@
   }
 
   .lead-gallery {
-    background: url('../subpage-images/gallery/lead.jpg')
+    background: url('../gallery/lead.jpg')
   }
 
   .lead-contact {
@@ -311,5 +311,9 @@
     .example-image-link {
       width: 300px;
     }
+  }
+
+  .gallery-button {
+    padding: 0px 50px 20px;
   }
 }

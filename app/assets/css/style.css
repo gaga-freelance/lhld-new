@@ -971,7 +971,7 @@ h6 {
   background: url("../subpage-images/landscaping/lead.jpg"); }
 
 .main .lead-gallery {
-  background: url("../subpage-images/gallery/lead.jpg"); }
+  background: url("../gallery/lead.jpg"); }
 
 .main .lead-contact {
   background: url("../subpage-images/contact/lead.jpg"); }
@@ -983,6 +983,9 @@ h6 {
     color: #f4f4f4; }
   .main .gallery .example-image-link {
     width: 300px; }
+
+.main .gallery-button {
+  padding: 0px 50px 20px; }
 
 .footer {
   background: #3c3c3c;
