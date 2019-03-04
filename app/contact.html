@@ -29,7 +29,9 @@
       <div class="logo">
         <a href="index.html"><img src="assets/images/logo.svg" title="Welcome to LHLD" alt="LHLD Logo" /></a>
       </div>
-      <nav role="navigation" class="nav">
+      <span onclick="openNav()" class="menu-toggle"><i class="fas fa-bars"></i></span>
+      <nav role="navigation" class="nav" id="nav">
+        <a href="javascript:void(0)" class="menu-toggle-close" onclick="closeNav()"><i class="fas fa-times"></i></a>
         <ul class="nav-items">
             <li class="nav-item">
               <a href="index.html" class="nav-link"><span>Home</span></a>
@@ -84,27 +86,37 @@
         </div>
       </div>
 
-      <div class="services">
+      <div class="contact">
         <div class="container">
-          <div class="block">
-            <div class="row">
-              <div class="col-8">
-                <h2></h2>
-                <p>
-                </p>
-              </div>
-              <div class="col-4 sidebar">
-                <img src="https://via.placeholder.com/282x141" title="#" alt="#" />
-                <p class="check"><i class="fas fa-check"></i> Fully insured</p>
-                <p class="check"><i class="fas fa-check"></i> No deposit required</p>
-                <p class="check"><i class="fas fa-check"></i> Free, no obligation quotes</p>
-                <p class="check"><i class="fas fa-check"></i> Portfolio available</p>
-                <p class="check"><i class="fas fa-check"></i> Free design service available</p>
-              </div>
+          <div class="row">
+            <div class="col-12">
+              <h1>We will get back to you as soon as possible</h1>
             </div>
-            <div class="row">
-              <a href="contact.html" class="button">Get a free quote today!</a>
-            </div>
+          </div>
+          <div class="row">
+            <form action="https://formspree.io/lhlandscapes1943@outlook.com" method="post">
+              <div class="col-4">
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Enter your full name" tabindex="1">
+              </div>
+              <div class="col-4">
+                <label for="name">email</label>
+                <input type="email" name="_replyto" placeholder="Enter your email address" tabindex="2">
+              </div>
+              <div class="col-4">
+                <label for="name">Telephone</label>
+                <input type="text" name="telephone" placeholder="Mobile / Home phone number" tabindex="3">
+              </div>
+              <div class="col-12">
+                <label for="name">Message</label>
+                <textarea placeholder="Enter your message here" rows="4" name="_text" tabindex="4"></textarea>
+              </div>
+              <div class="col-8"></div>
+              <div class="col-4">
+                <input type="submit" value="Send" class="button" />
+                <input type="text" name="_gotcha" style="display:none" />
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -217,6 +229,33 @@
             }
         });
       });
+
+      (function($) {
+          var $window = $(window),
+              $nav = $('nav');
+
+          function resize() {
+              if ($window.width() < 1030) {
+                  return $nav.addClass('mobile');
+              }
+
+              $nav.removeClass('mobile');
+          }
+
+          $window
+              .resize(resize)
+              .trigger('resize');
+      })(jQuery);
+    </script>
+
+    <script>
+    function openNav() {
+      document.getElementById("nav").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("nav").style.display = "none";
+    }
     </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

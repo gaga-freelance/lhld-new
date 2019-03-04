@@ -29,7 +29,9 @@
       <div class="logo">
         <a href="index.html"><img src="assets/images/logo.svg" title="Welcome to LHLD" alt="LHLD Logo" /></a>
       </div>
-      <nav role="navigation" class="nav">
+      <span onclick="openNav()" class="menu-toggle"><i class="fas fa-bars"></i></span>
+      <nav role="navigation" class="nav" id="nav">
+        <a href="javascript:void(0)" class="menu-toggle-close" onclick="closeNav()"><i class="fas fa-times"></i></a>
         <ul class="nav-items">
             <li class="nav-item">
               <a href="index.html" class="nav-link"><span>Home</span></a>
@@ -212,6 +214,33 @@
             }
         });
       });
+
+      (function($) {
+          var $window = $(window),
+              $nav = $('nav');
+
+          function resize() {
+              if ($window.width() < 1030) {
+                  return $nav.addClass('mobile');
+              }
+
+              $nav.removeClass('mobile');
+          }
+
+          $window
+              .resize(resize)
+              .trigger('resize');
+      })(jQuery);
+    </script>
+
+    <script>
+    function openNav() {
+      document.getElementById("nav").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("nav").style.display = "none";
+    }
     </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

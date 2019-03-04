@@ -564,6 +564,61 @@ h6 {
   color: #fff;
   text-shadow: none; }
 
+.contact {
+  background: #DB2B39;
+  padding: 10px 0 40px; }
+  .contact h1 {
+    color: #f4f4f4;
+    position: relative; }
+  .contact .button {
+    box-shadow: none;
+    border: 0;
+    background-color: #f4f4f4;
+    color: #DB2B39;
+    font-size: 1.1em;
+    cursor: pointer;
+    float: right; }
+  .contact form {
+    text-align: left; }
+    .contact form label {
+      display: block;
+      color: #f4f4f4;
+      font-weight: 500;
+      font-size: 14px; }
+    .contact form input[type="text"], .contact form input[type="email"] {
+      display: block;
+      width: 100%;
+      padding: 10px 10px;
+      background: none;
+      border: 2px solid white;
+      border-radius: 3px;
+      color: #f4f4f4;
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+      -ms-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out; }
+      .contact form input[type="text"]::placeholder, .contact form input[type="email"]::placeholder {
+        opacity: .5; }
+      .contact form input[type="text"]:focus, .contact form input[type="email"]:focus {
+        color: #DB2B39;
+        background: white; }
+    .contact form textarea {
+      width: 100%;
+      padding: 10px 10px;
+      border: 2px solid white;
+      color: #f4f4f4;
+      border-radius: 3px;
+      background: none;
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+      -ms-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out; }
+      .contact form textarea:focus {
+        color: #DB2B39;
+        background: white; }
+
 @media print {
   * {
     background: transparent !important;
@@ -652,9 +707,29 @@ h6 {
       .quick-contact .email a:hover {
         text-decoration: underline; }
 
+@media only screen and (max-width: 1280px) {
+  .logo {
+    width: 220px;
+    padding: 0px 10px 0px 10px; }
+    .logo img {
+      width: 200px; } }
+
+@media only screen and (max-width: 1240px) {
+  .quick-contact {
+    display: none; } }
+
 .nav {
   display: inline-block;
   vertical-align: top; }
+
+#nav {
+  display: inline-block; }
+
+.menu-toggle {
+  display: none; }
+
+.menu-toggle-close {
+  display: none; }
 
 .nav-items {
   list-style: none;
@@ -773,6 +848,57 @@ h6 {
   transform: translate(0, 25px) scale(1);
   pointer-events: auto; }
 
+@media only screen and (max-width: 1030px) {
+  #nav {
+    display: none; }
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: #f4f4f4;
+    color: #DB2B39;
+    font-size: 1.5em;
+    padding: 4px 10px;
+    cursor: pointer; }
+  .header-alt .menu-toggle {
+    top: 0; }
+  .menu-toggle-close {
+    display: block;
+    position: absolute;
+    right: 32px;
+    top: 25px;
+    cursor: pointer;
+    color: #f4f4f4;
+    font-size: 1.5em; }
+  .nav {
+    width: 0;
+    background: #DB2B39;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 60px; }
+  .nav-item {
+    display: block; }
+    .nav-item a {
+      text-align: center;
+      font-size: 1.2em;
+      background: #DB2B39;
+      color: #f4f4f4; }
+  .dropdown .nav-link::after {
+    border-top-color: #f4f4f4; }
+  .submenu {
+    width: 100%;
+    margin-left: 0;
+    left: 0;
+    background-color: #f4f4f4; }
+    .submenu .submenu-link {
+      background: #f4f4f4;
+      color: #DB2B39;
+      font-size: 1em; } }
+
 .main .lead {
   background: url("../images/lead.jpg");
   background-size: cover;
@@ -792,7 +918,7 @@ h6 {
     .main .lead .cta .cta-inner {
       background: #f4f4f4;
       padding: 10px 15px;
-      display: inline-block;
+      display: block;
       max-width: 73%;
       position: relative; }
       .main .lead .cta .cta-inner span {
@@ -827,11 +953,13 @@ h6 {
 .main .reviews {
   background: url("../images/grass.jpg");
   margin-top: 20px;
-  padding: 40px 0; }
+  padding: 40px 0;
+  background-size: cover; }
   .main .reviews .block {
     background: #f4f4f4;
     max-height: 500px;
-    overflow-y: scroll; }
+    overflow-y: scroll;
+    overflow-x: hidden; }
     .main .reviews .block h2 {
       margin-bottom: 10px; }
     .main .reviews .block .review-overview {
@@ -987,6 +1115,25 @@ h6 {
 .main .gallery-button {
   padding: 0px 50px 20px; }
 
+@media only screen and (max-width: 1100px) {
+  .main .lead .cta .cta-inner {
+    max-width: 100%;
+    padding-bottom: 20px; }
+    .main .lead .cta .cta-inner span {
+      font-size: 1.2em;
+      padding-right: 0px; }
+    .main .lead .cta .cta-inner .button {
+      position: relative;
+      font-size: 1em;
+      text-align: right;
+      margin-left: 15px; }
+  .main .getintouch-cta p {
+    font-size: 1.5em;
+    line-height: 1.2em;
+    display: block; }
+  .main .getintouch-cta .button {
+    font-size: 1em; } }
+
 .footer {
   background: #3c3c3c;
   color: #f4f4f4;
@@ -1021,3 +1168,10 @@ h6 {
     padding-top: 100px;
     display: block;
     height: 100%; }
+
+@media only screen and (max-width: 1100px) {
+  .footer .surrey {
+    text-align: left;
+    padding-top: 20px; }
+  .footer .copy {
+    padding-top: 20px; } }

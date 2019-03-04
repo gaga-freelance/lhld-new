@@ -1,0 +1,72 @@
+.contact {
+  background: $base;
+  padding: 10px 0 40px;
+
+  h1 {
+    color: $white;
+    position: relative;
+  }
+
+  .button {
+    box-shadow: none;
+    border: 0;
+    background-color: $white;
+    color: $base;
+    font-size: 1.1em;
+    cursor: pointer;
+    float: right;
+  }
+
+  form {
+    text-align: left;
+
+    label {
+      display: block;
+      color: $white;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    input[type="text"], input[type="email"] {
+      display: block;
+      width: 100%;
+      padding: 10px 10px;
+      background: none;
+      border: 2px solid white;
+      border-radius: 3px;
+      color: $white;
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+      -ms-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+
+      &::placeholder {
+        opacity: .5;
+      }
+
+      &:focus {
+        color: $base;
+        background: white;
+      }
+    }
+    textarea {
+      width: 100%;
+      padding: 10px 10px;
+      border: 2px solid white;
+      color: $white;
+      border-radius: 3px;
+      background: none;
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+      -ms-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+
+      &:focus {
+        color: $base;
+        background: white;
+      }
+    }
+  }
+}

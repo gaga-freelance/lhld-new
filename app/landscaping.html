@@ -29,7 +29,9 @@
       <div class="logo">
         <a href="index.html"><img src="assets/images/logo.svg" title="Welcome to LHLD" alt="LHLD Logo" /></a>
       </div>
-      <nav role="navigation" class="nav">
+      <span onclick="openNav()" class="menu-toggle"><i class="fas fa-bars"></i></span>
+      <nav role="navigation" class="nav" id="nav">
+        <a href="javascript:void(0)" class="menu-toggle-close" onclick="closeNav()"><i class="fas fa-times"></i></a>
         <ul class="nav-items">
             <li class="nav-item">
               <a href="index.html" class="nav-link"><span>Home</span></a>
@@ -90,11 +92,12 @@
             <div class="row">
               <div class="col-8">
                 <h2>Landscaping</h2>
-                <p>We pride ourselves on offering a complete and personal service to our clients. An initial visit will be made to offer advice and discuss your individual needs and make suitable recommendations. We only use the best materials available for high quality landscaped gardens. We are happy to work with both domestic and commercial customers from design, complete construction to completion. Unique Drives LHLD can deal with all outside aspects of your property from drives and driveways through to patios and hard garden landscaping. Whether you need block paving, patios, decking, turfing, fencing, paving, paths or driveways we can help. Re-designing your garden is an exciting prospect. Do you wish you had somewhere to sit, relax, entertain or let the children play? Taking the time to landscape your home will be an investment of your money that you can be very proud of. It is something most everyone coming to your home will see as well as those just walking by. Enjoying your landscaping can bring a breath of fresh air to your day when you arrive home. It can also serve as a great place to entertain guests. Landscaping is the art of blending nature and construction together. Landscaping includes all elements of garden design features such as planting, lawns, artificial grass, pergolas, decking, paving patio, water features and much more. Garden Design Abel landscaping offers a full-service landscaping garden design consultancy to clients seeking an outside space which is both beautiful and functional. Our design service is incredibly flexible and we have the experience and expertise to incorporate just about anything, from planters for small patios, courtyards and roof terraces to full-scale garden landscaping, we offer a range of services from the design concept through construction management to planting and garden styling. We have extensive experience in creating beautiful garden spaces in petite areas to large country estates in a whole range of styles matched to varying levels of budget. Contemporary Garden. The contemporary style garden has gained popularity in the UK in the last 10 years. This is partly due to the increase of modern housing with small gardens as well as the cultural shift towards contemporary design. This style of garden can be defined by the use ‘clean’ design lines, with focus on hard landscaping materials like stone, hardwood, rendered walls. Planting style is bold but simple with the use of drifts of one or two plants that repeat throughout the design. Low-Maintenance Garden. Creating outdoor living spaces lends itself to low-maintenance landscaping, can be a beautiful nice and clean space with paving, composite decking, lighting and artificial grass.  The low-maintenance garden is perfect for anyone who would rather kick back their heels and enjoy their outdoor space than spend countless hours maintaining it. Traditional gardens. Traditional gardens are quite flexible. The term can mean different things to different people, is a distinct style that uses informal design, traditional materials, dense plantings, and a mixture of ornamental and edible plants. English in origin, it depends on grace and charm rather than grandeur and formal structure. Mediterranean gardens. Mediterranean gardens are a fantastic way to make us feel that we live in hotter climes. By careful plant choice, you can mimic the look of many of the plants that originate in the Mediterranean. Some, such as herbs, are hardy and if planted in a free-draining spot should flourish in most British gardens.
+                <p>An initial visit will be made to offer advice and discuss your individual needs and make suitable recommendations. We only use the best materials available for high quality landscaped gardens. We are happy to work with both domestic and commercial customers from design, complete construction to completion.<br /><br />
+                  Re-designing your garden is an exciting prospect. Do you wish you had somewhere to sit, relax, entertain or let the children play? Taking the time to landscape your home will be an investment of your money that you can be very proud of. It is something most everyone coming to your home will see as well as those just walking by.
                 </p>
               </div>
               <div class="col-4 sidebar">
-                <img src="assets/subpage-images/landscaping/side.jpg" title="Landscaping" alt="Landscaping" />
+                <img src="assets/subpage-images/turfing/side.jpg" title="Landscaping" alt="Landscaping" />
                 <p class="check"><i class="fas fa-check"></i> Fully insured</p>
                 <p class="check"><i class="fas fa-check"></i> No deposit required</p>
                 <p class="check"><i class="fas fa-check"></i> Free, no obligation quotes</p>
@@ -119,7 +122,7 @@
         </div>
       </div>
 
-      <div class="gallery">
+      <!-- <div class="gallery">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -132,7 +135,7 @@
             <a class="example-image-link" href="assets/subpage-images/landscaping/3.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="assets/subpage-images/landscaping/thumbnails/3.jpg" alt="" /></a>
           </div>
         </div>
-      </div>
+      </div> -->
 
     </main>
 
@@ -211,6 +214,33 @@
             }
         });
       });
+
+      (function($) {
+          var $window = $(window),
+              $nav = $('nav');
+
+          function resize() {
+              if ($window.width() < 1030) {
+                  return $nav.addClass('mobile');
+              }
+
+              $nav.removeClass('mobile');
+          }
+
+          $window
+              .resize(resize)
+              .trigger('resize');
+      })(jQuery);
+    </script>
+
+    <script>
+    function openNav() {
+      document.getElementById("nav").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("nav").style.display = "none";
+    }
     </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
