@@ -986,7 +986,7 @@ h6 {
     .main .reviews .block .review {
       padding-top: 10px;
       padding-bottom: 20px; }
-      .main .reviews .block .review .col-9 {
+      .main .reviews .block .review .col-12 {
         border-bottom: 1px solid #aaa; }
       .main .reviews .block .review .title {
         font-size: 1.2em;
@@ -1175,3 +1175,7 @@ h6 {
     padding-top: 20px; }
   .footer .copy {
     padding-top: 20px; } }
+
+.starreviews {
+  padding-top: 36px;
+}
