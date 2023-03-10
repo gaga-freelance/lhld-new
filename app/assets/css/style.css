@@ -903,7 +903,13 @@ h6 {
   background: url("../images/lead.jpeg");
   background-size: cover;
   height: 90vh;
-  position: relative; }
+  position: relative;
+  background-position-x: -200px; }
+  @media only screen and (min-width: 45em) {
+    .main .lead {
+      background-position-x: 0; 
+    }
+  }
   .main .lead .cta {
     position: absolute;
     bottom: 0;
