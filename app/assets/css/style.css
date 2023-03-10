@@ -900,7 +900,7 @@ h6 {
       font-size: 1em; } }
 
 .main .lead {
-  background: url("../images/lead.jpg");
+  background: url("../images/lead.jpeg");
   background-size: cover;
   height: 90vh;
   position: relative; }
